@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UP China Android App autotest">
+  <test name="TestUPchinaAndroid">
+    <groups>
+		<run>
+		    <exclude name="in process" />
+		</run>
+	</groups>
+    <classes>
+      <class name="testcase.UP_Metal.Android.Monitor.test_01_HomePage_Monitor"/>
+      <class name="testcase.UP_Metal.Android.Monitor.test_02_Investigation_Monitor"/>
+      <class name="testcase.UP_Metal.Android.Monitor.test_03_Treasure_Monitor"/>
+      <class name="testcase.UP_Metal.Android.Monitor.test_04_Mine_Monitor"/>
+    </classes>
+  </test>
+</suite>

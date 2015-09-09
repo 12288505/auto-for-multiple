@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UP Metal Android App autotest">
+  <test name="TestUPmetalAndroid">
+    <groups>
+		<run>
+		    <exclude name="in process" />
+		</run>
+	</groups>
+	<packages>
+      <package name="testcase.UP_Metal.Android.P1.*"/>
+    </packages>
+  </test>
+</suite>

@@ -1,0 +1,12 @@
+{
+	"configFileType":"API",
+	"application":"UP China Web Service接口",
+    "path":[
+		  
+		  {"apiName":"查询渤海现货类型信息列表数据",  "apiPath":"/uprest/actualsgoods/getactulsgoodstype"},
+		  {"apiName":"获取主题",                     "apiPath":"/uprest/ChatBar/GetTopic"},
+		  {"apiName":"获取精华主题",                 "apiPath":"/ChatBar/GetBestTopic"},
+		  {"apiName":"WebServiceDemo",              "apiPath":"/uprest/actualsgoods/getactulsgoodstype"}		  
+	]
+				
+}

@@ -1,0 +1,830 @@
+{
+	"configFileType":"uiMap",
+	"application":{
+		"properties":{
+			"targetApplicationName":"UP China",
+			"targetApplicationVersion":"up_android_0513_v1.0",
+			"defaultPage":"使用导航"
+		},
+		"pages":[
+			{
+				"properties":{"pageName":"使用导航","path":"/","defaultView":"导航"},
+				"views":[
+					{"viewName":"导航","defaultArea":"导航","activeAreas":["导航"]}
+				],
+				"areas":[
+					{
+						"areaName":"导航","locator":"",
+						"elements":[
+							{"elementName":"立刻体验","locator":"<id>=com.upchina:id/imageview","view":"主页:主页"},
+							{"elementName":"首页",  "locator":"<name>=首页"}
+						]
+					}
+				]
+			},
+			{
+				"properties":{"pageName":"主页","path":"/","defaultView":"主页"},
+				"views":[
+					{"viewName":"主页",          "defaultArea":"主页","activeAreas":["主页","页脚","搜索"]},
+					{"viewName":"自选",          "defaultArea":"自选","activeAreas":["自选","页脚","搜索"]},
+					{"viewName":"行情",          "defaultArea":"行情","activeAreas":["行情","页脚","搜索"]},
+					{"viewName":"资讯",          "defaultArea":"资讯","activeAreas":["资讯","页脚"]},
+					{"viewName":"发现",          "defaultArea":"发现","activeAreas":["发现","页脚"]},
+					{"viewName":"我的",          "defaultArea":"我的","activeAreas":["我的"]},
+					
+					{"viewName":"智能选股",            "defaultArea":"智能选股","activeAreas":["智能选股"]},
+					{"viewName":"一键选股",            "defaultArea":"一键选股","activeAreas":["一键选股"]},
+					{"viewName":"指标内容页",          "defaultArea":"指标内容页","activeAreas":["指标内容页","搜索"]},
+					{"viewName":"研究所",              "defaultArea":"研究所","activeAreas":["研究所","搜索"]},
+					{"viewName":"资讯内容页",          "defaultArea":"资讯内容页","activeAreas":["资讯内容页"]},
+					{"viewName":"新闻分类页",          "defaultArea":"新闻分类页","activeAreas":["新闻分类页","搜索"]},
+					{"viewName":"编辑指数",            "defaultArea":"编辑指数","activeAreas":["编辑指数"]},
+					{"viewName":"选股页面",            "defaultArea":"选股页面","activeAreas":["选股页面"]},
+					{"viewName":"高手藏金阁",          "defaultArea":"高手藏金阁","activeAreas":["高手藏金阁"]},
+					{"viewName":"特色内参",            "defaultArea":"特色内参","activeAreas":["特色内参"]},
+					{"viewName":"指数分析页",          "defaultArea":"指数分析页","activeAreas":["指数分析页","预警设置"]},
+					
+					{"viewName":"登录",                "defaultArea":"登录","activeAreas":["登录","预警设置"]},
+					{"viewName":"个人信息",            "defaultArea":"个人信息","activeAreas":["个人信息"]},
+					{"viewName":"微信登陆",            "defaultArea":"微信登陆","activeAreas":["微信登陆"]},
+					{"viewName":"微博",                "defaultArea":"微博","activeAreas":["微博"]},
+					{"viewName":"授权页面",            "defaultArea":"授权页面","activeAreas":["授权页面"]},
+					{"viewName":"帐号绑定",            "defaultArea":"帐号绑定","activeAreas":["帐号绑定"]},
+					{"viewName":"修改密码页",          "defaultArea":"修改密码页","activeAreas":["修改密码页"]},
+					{"viewName":"快捷注册",            "defaultArea":"快捷注册","activeAreas":["快捷注册"]},
+					{"viewName":"优品金融终端页面",    "defaultArea":"优品金融终端页面","activeAreas":["优品金融终端页面"]},
+					{"viewName":"意见反馈",            "defaultArea":"意见反馈","activeAreas":["意见反馈","图片"]},
+					{"viewName":"填写资料",            "defaultArea":"填写资料","activeAreas":["填写资料"]},
+					
+					{"viewName":"预警管理",            "defaultArea":"预警管理","activeAreas":["预警管理"]},
+					
+					{"viewName":"L2风云详情页",        "defaultArea":"L2风云详情页","activeAreas":["L2风云详情页"]},
+					{"viewName":"L2风云分析页",        "defaultArea":"L2风云分析页","activeAreas":["L2风云分析页"]},
+					{"viewName":"L2风云",              "defaultArea":"L2风云","activeAreas":["L2风云"]}
+					
+				],
+				"areas":[
+					{
+						"areaName":"页脚","locator":"",
+						"elements":[
+							{"elementName":"跳转首页",  "locator":"<xpath>=(//android.widget.TabWidget//android.widget.ImageView)[1]","view":"主页:主页"},
+							{"elementName":"跳转自选",  "locator":"<xpath>=(//android.widget.TabWidget//android.widget.ImageView)[2]","view":"主页:自选"},
+							{"elementName":"跳转行情",  "locator":"<xpath>=(//android.widget.TabWidget//android.widget.ImageView)[3]","view":"主页:行情"},
+							{"elementName":"跳转资讯",  "locator":"<xpath>=(//android.widget.TabWidget//android.widget.ImageView)[4]","view":"主页:资讯"},
+							{"elementName":"跳转发现",  "locator":"<xpath>=(//android.widget.TabWidget//android.widget.ImageView)[5]","view":"主页:发现"}
+						]
+					},
+					{
+					    "areaName":"主页","locator":"",
+						"elements":[
+							{"elementName":"跳转我的",  "locator":"<xpath>=(//android.widget.ImageView)[1]","view":"主页:我的"},
+							
+							{"elementName":"搜索",      "locator":"<id>=com.upchina:id/stock_searchbtn"},
+							{"elementName":"自选",      "locator":"<name>=自选","view":"主页:自选"},
+							{"elementName":"沪深股票",  "locator":"<name>=沪深股票"},
+							{"elementName":"港股",      "locator":"<name>=港股"},
+							{"elementName":"美股",      "locator":"<name>=美股"},
+							{"elementName":"股票开户",  "locator":"<name>=股票开户"},
+							{"elementName":"股票交易",  "locator":"<name>=股票交易"},
+							{"elementName":"股林高手",  "locator":"<name>=股林高手","view":"主页:股林高手"},
+							{"elementName":"智能选股",  "locator":"<name>=智能选股", "view":"主页:智能选股"},
+							{"elementName":"资金流向",  "locator":"<name>=资金流向"},
+							{"elementName":"DDE决策",   "locator":"<name>=DDE决策"},
+							{"elementName":"研究所",    "locator":"<name>=优品研究所","view":"主页:研究所"},
+							{"elementName":"热门板块",  "locator":"<name>=热门板块","view":"主页:热门板块"},
+							{"elementName":"期货",      "locator":"<name>=期货"},
+							{"elementName":"指数",      "locator":"<name>=指数"},
+							{"elementName":"渤海商品",  "locator":"<name>=渤海商品","view":"主页:渤海"},
+							{"elementName":"贵金属",    "locator":"<name>=贵金属","view":"主页:贵金属"},
+							{"elementName":"沪深基金",  "locator":"<name>=沪深基金"},
+							
+							{"elementName":"高层决策内参",  "locator":"<name>=高层决策内参"},
+							{"elementName":"每日证券电讯",  "locator":"<name>=每日证券电讯"},
+							{"elementName":"热门题材",      "locator":"<name>=热门题材"},
+							{"elementName":"股市直播",      "locator":"<name>=股市直播"},
+							
+							{"elementName":"热门题材1",     "locator":"<id>=com.upchina:id/group5_layout1"},
+							{"elementName":"热门题材2",     "locator":"<id>=com.upchina:id/group5_layout2"},
+							{"elementName":"热门题材3",     "locator":"<id>=com.upchina:id/group5_layout3"},
+							
+							
+							{"elementName":"新闻1",      "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[1]"},
+							{"elementName":"新闻2",      "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[4]"},
+							{"elementName":"新闻3",      "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[7]"},
+							{"elementName":"新闻4",      "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[10]"}
+						]
+					},
+					{
+						"areaName":"自选","locator":"",
+						"elements":[
+							{"elementName":"自选编辑",     "locator":"<name>=编辑"},
+							{"elementName":"自选标题",     "locator":"<id>=com.upchina:id/stock_name"},
+							{"elementName":"选择股票类型", "locator":"<id>=com.upchina:id/search_type_btn"},
+							{"elementName":"自选搜索",     "locator":"<id>=com.upchina:id/stock_searchbtn"},
+							{"elementName":"名称代码",     "locator":"<name>=名称/代码"},
+							{"elementName":"现价",         "locator":"<name>=现价"},
+							{"elementName":"涨跌幅",       "locator":"<name>=涨跌幅"},
+							{"elementName":"操作提示",    "locator":"<id>=com.upchina:id/lead_dialog_layout"},
+							
+							{"elementName":"搜索并添加自选",   "locator":"<id>=com.upchina:id/optional_select_img"},
+							{"elementName":"云同步PC端自选",   "locator":"<name>=云同步PC端自选"},
+							
+							
+							{"elementName":"热门股票",     "locator":"<name>=热门股票"},
+							{"elementName":"热门股票1",    "locator":"<xpath>=(//android.widget.GridView//android.widget.LinearLayout)[1]"},
+							
+							{"elementName":"全部自选",     "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[1]"},
+							{"elementName":"自选股票",     "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[2]"},
+							{"elementName":"自选商品",     "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[3]"},
+							{"elementName":"自选贵金属",   "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[4]"},
+							{"elementName":"自选期货",     "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[5]"},
+							{"elementName":"自选基金",     "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[6]"},
+							{"elementName":"自选港股",     "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[7]"},
+							{"elementName":"自选美股",     "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[8]"},
+							
+							{"elementName":"行情",      "locator":"<name>=行情"},
+							{"elementName":"新闻",      "locator":"<name>=新闻"},
+							{"elementName":"公告",      "locator":"<name>=公告"},
+							{"elementName":"研报",      "locator":"<name>=研报"},
+							{"elementName":"资金",      "locator":"<name>=资金"},
+							{"elementName":"DDE",       "locator":"<name>=DDE"},
+							
+							{"elementName":"向右箭头",  "locator":"<xpath>=(//android.widget.ImageView)[1]"},
+							
+							{"elementName":"股票名称1",   "locator":"<xpath>=(//android.widget.LinearLayout/android.widget.TextView)[4]"},
+							{"elementName":"股票代码1",   "locator":"<xpath>=(//android.widget.LinearLayout/android.widget.TextView)[5]"},
+							{"elementName":"股票现价1",   "locator":"<xpath>=(//android.widget.LinearLayout/android.widget.TextView)[6]"},
+							{"elementName":"股票涨跌幅1", "locator":"<xpath>=(//android.widget.LinearLayout/android.widget.TextView)[7]"},
+							{"elementName":"股票名称2",   "locator":"<xpath>=(//android.widget.LinearLayout/android.widget.TextView)[8]"},
+							{"elementName":"股票名称3",   "locator":"<xpath>=(//android.widget.LinearLayout/android.widget.TextView)[12]"},
+							
+							{"elementName":"勾选股票",    "locator":"<xpath>=(//android.widget.CheckBox)"},
+							{"elementName":"完成",        "locator":"<name>=完成"},
+							{"elementName":"是",          "locator":"<name>=是"},
+							{"elementName":"否",          "locator":"<name>=否"},
+							{"elementName":"删除",        "locator":"<id>=com.upchina:id/delete_btn"}
+							
+						]
+					},
+					{
+						"areaName":"行情","locator":"",
+						"elements":[
+							{"elementName":"行情",          "locator":"<id>=com.upchina:id/tv_market"},
+							{"elementName":"分类",          "locator":"<id>=com.upchina:id/tv_type"},
+							{"elementName":"行情搜索",      "locator":"<id>=com.upchina:id/stock_searchbtn"},
+							{"elementName":"行情刷新",      "locator":"<id>=com.upchina:id/refesh_btn"},
+							
+							{"elementName":"行情沪深",      "locator":"<id>=com.upchina:id/tv_hushen_stock"},
+							{"elementName":"行情上证指数",  "locator":"<name>=上证指数"},
+							{"elementName":"行情港股",      "locator":"<id>=com.upchina:id/tv_hk_stock"},
+							{"elementName":"港股提示",      "locator":"<id>=com.upchina:id/btn_pos"},
+							{"elementName":"行情恒生指数",  "locator":"<name>=恒生指数"},
+							{"elementName":"行情美股",      "locator":"<id>=com.upchina:id/tv_us_stock"},
+							{"elementName":"行情道琼斯指",  "locator":"<name>=道琼斯指"},
+							{"elementName":"行情指数",      "locator":"<id>=com.upchina:id/tv_index"},
+							{"elementName":"行情国内指数",  "locator":"<name>=国内指数"},
+							{"elementName":"行情期货",      "locator":"<id>=com.upchina:id/tv_futures"},
+							{"elementName":"行情中金所",  "locator":"<name>=中金所"},
+							
+							
+							{"elementName":"沪深",        "locator":"<xpath>=(//android.widget.TextView)[3]"},
+							{"elementName":"指数",        "locator":"<xpath>=(//android.widget.LinearLayout/android.widget.Button)[1]"},
+							{"elementName":"板块",        "locator":"<name>=板块"},
+							{"elementName":"沪深A股",     "locator":"<name>=沪深A股"},
+							{"elementName":"沪深B股",     "locator":"<name>=沪深B股"},
+							{"elementName":"深A",         "locator":"<name>=深A"},
+							{"elementName":"沪A",         "locator":"<name>=沪A"},
+							{"elementName":"中小板",      "locator":"<name>=中小板"},
+							{"elementName":"沪深创业板",  "locator":"<xpath>=(//android.widget.LinearLayout/android.widget.Button)[8]"},
+							
+							{"elementName":"港股",        "locator":"<xpath>=(//android.widget.TextView)[4]"},
+							{"elementName":"港股通",      "locator":"<name>=港股通"},
+							{"elementName":"AH股",        "locator":"<name>=AH股"},
+							{"elementName":"港股指数",    "locator":"<name>=港股指数"},
+							{"elementName":"港股创业板",  "locator":"<name>=(//android.widget.ScrollView//android.widget.Button)[12]"},
+							{"elementName":"红筹股",      "locator":"<name>=红筹股"},
+							{"elementName":"国企股",      "locator":"<name>=国企股"},
+							{"elementName":"港股主板",    "locator":"<name>=港股主板"},
+							
+							{"elementName":"美股",        "locator":"<xpath>=(//android.widget.TextView)[5]"},
+							{"elementName":"中概股",      "locator":"<name>=中概股"},
+							{"elementName":"标普500",     "locator":"<name>=标普500"},
+							{"elementName":"纳斯达克",    "locator":"<name>=纳斯达克"},
+							{"elementName":"美交所",      "locator":"<name>=美交所"},
+							{"elementName":"道琼斯",      "locator":"<name>=道琼斯"},
+							{"elementName":"纽交所",      "locator":"<name>=纽交所"},
+							
+							{"elementName":"期货",        "locator":"<xpath>=(//android.widget.TextView)[6]"},
+							{"elementName":"期货综合",    "locator":"<name>=期货综合"},
+							{"elementName":"金融期货",    "locator":"<name>=金融期货"},
+							{"elementName":"上海期货",    "locator":"<name>=上海期货"},
+							{"elementName":"郑州期货",    "locator":"<name>=郑州期货"},
+							{"elementName":"大连期货",    "locator":"<name>=大连期货"},
+							
+							{"elementName":"现货",        "locator":"<name>=现货"},
+							{"elementName":"渤海商品",    "locator":"<name>=渤海商品"},
+							{"elementName":"天津贵金属",  "locator":"<name>=天津贵金属"},
+							{"elementName":"广东贵金属",  "locator":"<name>=广东贵金属"},
+							{"elementName":"大圆银泰",    "locator":"<name>=大圆银泰"},
+							{"elementName":"上海黄金",    "locator":"<name>=上海黄金"},
+							{"elementName":"国际黄金",    "locator":"<name>=国际黄金"},
+							
+							{"elementName":"基金",        "locator":"<name>=基金"},
+							{"elementName":"沪深基金",    "locator":"<name>=沪深基金"},
+							
+							
+							{"elementName":"上证指数",    "locator":"<name>=上证指数","view":"主页:指数分析页"},
+							{"elementName":"上证指数值",  "locator":"<xpath>=(//android.widget.ScrollView//android.widget.TextView)[2]"},
+							
+							{"elementName":"热门板块",     "locator":"<name>=热门板块"},
+							{"elementName":"更多热门",     "locator":"<xpath>=(//android.widget.ImageView)[1]"},
+							{"elementName":"热门1",        "locator":"<xpath>=(//android.widget.TableRow/android.widget.LinearLayout)[1]","view":"主页:热门列表"},
+							{"elementName":"热门1名称",    "locator":"<xpath>=(//android.widget.TableRow//android.widget.TextView)[1]"},
+							{"elementName":"热门1涨幅",    "locator":"<xpath>=(//android.widget.TableRow//android.widget.TextView)[2]"},
+							{"elementName":"领涨1",        "locator":"<xpath>=(//android.widget.TableRow//android.widget.TextView)[4]"},
+							
+							{"elementName":"涨幅榜",    "locator":"<name>=涨幅榜"},
+							{"elementName":"更多涨幅榜","locator":"<xpath>=(//android.widget.ImageView)[2]"},
+							{"elementName":"涨股1",     "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[1]","view":"主页:指数分析页"},
+							{"elementName":"涨股1现价", "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[3]"},
+							{"elementName":"涨股1涨幅", "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[4]"},
+							{"elementName":"涨股2",     "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[5]","view":"主页:指数分析页"},
+							{"elementName":"涨股2现价", "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[7]"},
+							{"elementName":"涨股2涨幅", "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[8]"},
+							{"elementName":"涨股3",     "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[9]","view":"主页:指数分析页"},
+							{"elementName":"涨股3现价", "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[11]"},
+							{"elementName":"涨股3涨幅", "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[12]"},
+							
+							{"elementName":"跌幅榜",    "locator":"<name>=跌幅榜"},
+							{"elementName":"更多跌幅榜","locator":"<xpath>=(//android.widget.ImageView)[1]"},
+							{"elementName":"跌股1",     "locator":"<xpath>=((//android.widget.ListView)[2]//android.widget.TextView)[1]","view":"主页:指数分析页"},
+							{"elementName":"跌股1现价", "locator":"<xpath>=((//android.widget.ListView)[2]//android.widget.TextView)[3]"},
+							{"elementName":"跌股1跌幅", "locator":"<xpath>=((//android.widget.ListView)[2]//android.widget.TextView)[4]"},
+							{"elementName":"跌股2",     "locator":"<xpath>=((//android.widget.ListView)[2]//android.widget.TextView)[5]","view":"主页:指数分析页"},
+							{"elementName":"跌股2现价", "locator":"<xpath>=((//android.widget.ListView)[2]//android.widget.TextView)[7]"},
+							{"elementName":"跌股2跌幅", "locator":"<xpath>=((//android.widget.ListView)[2]//android.widget.TextView)[8]"},
+							{"elementName":"跌股3",     "locator":"<xpath>=((//android.widget.ListView)[2]//android.widget.TextView)[9]","view":"主页:指数分析页"},
+							{"elementName":"跌股3现价", "locator":"<xpath>=((//android.widget.ListView)[2]//android.widget.TextView)[11]"},
+							{"elementName":"跌股3跌幅", "locator":"<xpath>=((//android.widget.ListView)[2]//android.widget.TextView)[12]"},
+							
+							{"elementName":"国内指数",     "locator":"<name>=国内指数"},
+							{"elementName":"点击添加",     "locator":"<name>=点击添加","view":"主页:编辑指数"},
+							{"elementName":"国内指数1",    "locator":"<xpath>=(//android.widget.GridView/android.widget.RelativeLayout)[1]"},
+							{"elementName":"全球指数",     "locator":"<name>=全球指数"}
+						]
+					},
+					{
+						"areaName":"资讯","locator":"",
+						"elements":[
+							{"elementName":"题材",          "locator":"<name>=题材"},
+							{"elementName":"要闻",          "locator":"<name>=要闻"},
+							{"elementName":"滚动",          "locator":"<name>=滚动"},
+							{"elementName":"更多",          "locator":"<name>=更多"},
+							
+							{"elementName":"热点1",          "locator":"<id>=com.upchina:id/themelayout1"},
+							{"elementName":"热点2",          "locator":"<id>=com.upchina:id/themelayout2"},
+							{"elementName":"热点3",          "locator":"<id>=com.upchina:id/themelayout3"},
+							
+							{"elementName":"新能源汽车",          "locator":"<name>=新能源汽车"},
+							{"elementName":"超级电容",            "locator":"<name>=超级电容"},
+							{"elementName":"财新资讯精选",        "locator":"<id>=com.upchina:id/type_name"},
+							
+							{"elementName":"滚动内容1",           "locator":"<xpath>=(//android.widget.RelativeLayout//android.widget.LinearLayout)[2]"},
+							
+							{"elementName":"沪深",          "locator":"<name>=沪深"},
+							{"elementName":"宏观",          "locator":"<name>=宏观"},
+							{"elementName":"行业",          "locator":"<name>=行业"},
+							{"elementName":"个股",          "locator":"<name>=个股"},
+							{"elementName":"新股",          "locator":"<name>=新股"},
+							{"elementName":"港股",          "locator":"<name>=港股"},
+							{"elementName":"美股",          "locator":"<name>=美股"},
+							{"elementName":"基金",          "locator":"<name>=基金"},
+							{"elementName":"理财",          "locator":"<name>=理财"},
+							{"elementName":"黄金",          "locator":"<name>=黄金"},
+							{"elementName":"外汇",          "locator":"<name>=外汇"},
+							{"elementName":"债券",          "locator":"<name>=债券"},
+							{"elementName":"期货",          "locator":"<name>=期货"}
+						]
+					},	
+					{
+						"areaName":"发现","locator":"",
+						"elements":[
+							{"elementName":"发现标题",       "locator":"<id>=com.upchina:id/stock_name"},
+							
+							{"elementName":"发现导航",       "locator":"<id>=com.upchina:id/lead_dialog_layout"},
+							{"elementName":"选股",           "locator":"<name>=选股"},
+							{"elementName":"一键选股订阅",   "locator":"<id>=com.upchina:id/subscribe_btn"},
+							{"elementName":"百宝箱",         "locator":"<name>=百宝箱"},
+							{"elementName":"我的订阅",       "locator":"<name>=我的订阅"},
+							
+							{"elementName":"一键选股",         "locator":"<name>=一键选股"},
+							{"elementName":"涨停尖兵",         "locator":"<name>=涨停尖兵"},
+							{"elementName":"短线狙击",         "locator":"<name>=短线狙击"},
+							{"elementName":"操盘驱动",         "locator":"<name>=操盘驱动"},
+							{"elementName":"多赢驱动",         "locator":"<name>=多赢驱动"},
+							{"elementName":"基金重仓",         "locator":"<name>=基金重仓","view":"主页:选股页面"},
+							{"elementName":"社保重仓",         "locator":"<name>=社保重仓","view":"主页:选股页面"},
+							{"elementName":"QFII重仓",         "locator":"<name>=QFII重仓","view":"主页:选股页面"},
+							{"elementName":"机构关注最高",     "locator":"<name>=机构关注最高","view":"主页:选股页面"},
+							{"elementName":"明星分析师荐股",   "locator":"<name>=明星分析师荐股","view":"主页:选股页面"},
+							{"elementName":"估值空间最大",     "locator":"<name>=估值空间最大","view":"主页:选股页面"},
+							
+							{"elementName":"特色内参",         "locator":"<name>=特色内参"},
+							{"elementName":"高手藏金阁",       "locator":"<name>=高手藏金阁","view":"主页:高手藏金阁"},
+							{"elementName":"高层决策内参",     "locator":"<name>=高层决策内参","view":"主页:特色内参"},
+							{"elementName":"每日证券电讯",     "locator":"<name>=每日证券电讯","view":"主页:特色内参"},
+							{"elementName":"财经日历",         "locator":"<name>=财经日历"},
+							
+							{"elementName":"我的订阅1",        "locator":"<id>=com.upchina:id/title_img"},
+							
+							{"elementName":"主力分析",         "locator":"<name>=主力分析"},
+							{"elementName":"资金流向",         "locator":"<name>=资金流向"},
+							{"elementName":"DDE决策",          "locator":"<name>=DDE决策"},
+							
+							{"elementName":"订阅",            "locator":"<xpath>=//*[@text='+订阅']"},
+							
+							{"elementName":"特权",                   "locator":"<name>=特权"},
+							{"elementName":"高手云秒杀（A套餐）",    "locator":"<name>=高手云秒杀(A套餐)","view":"主页:L2风云"},
+							{"elementName":"高手云秒杀（B套餐）",    "locator":"<name>=高手云秒杀(B套餐)","view":"主页:高手云秒杀B套餐"},
+							{"elementName":"L2风云",                 "locator":"<name>=L2风云","view":"主页:L2风云"}
+							
+						]
+					},
+					{
+						
+						"areaName":"我的","locator":"",
+						"elements":[
+						    {"elementName":"我的标题","locator":"<name>=我的"},
+						    {"elementName":"我的返回","locator":"<id>=com.upchina:id/back_btn","view":"主页:主页"},
+						    {"elementName":"登录导航","locator":"<id>=com.upchina:id/lead_dialog_layout"},
+						    {"elementName":"头像",    "locator":"<id>=com.upchina:id/head","view":"主页:个人信息"},
+							{"elementName":"点击登录","locator":"<id>=com.upchina:id/center_top","view":["主页:登录","主页:个人信息"]},
+							{"elementName":"消息中心","locator":"<name>=消息中心"},
+							{"elementName":"我的收藏","locator":"<name>=我的收藏","view":"主页:我的收藏"},
+							{"elementName":"预警管理","locator":"<name>=预警管理","view":"主页:预警管理"},
+							{"elementName":"给个好评","locator":"<name>=给个好评","view":"主页:优品金融终端页面"},
+							{"elementName":"意见反馈","locator":"<name>=意见反馈","view":"主页:意见反馈"},
+							{"elementName":"设置",    "locator":"<name>=设置",    "view":"主页:我的设置"}
+						]
+					},
+					{
+						"areaName":"预警管理","locator":"",
+						"elements":[
+						    {"elementName":"编辑",        "locator":"<id>=com.upchina:id/edit_btn"},						    
+						    {"elementName":"返回",        "locator":"<id>=com.upchina:id/back_btn","view":"主页:我的"},
+						    {"elementName":"选择所有",    "locator":"<id>=com.upchina:id/selectall_checkbox"},
+						    {"elementName":"删除",        "locator":"<id>=com.upchina:id/delete_btn"},
+						    {"elementName":"完成",        "locator":"<id>=com.upchina:id/edit_btn"},
+						    {"elementName":"是",          "locator":"<id>=com.upchina:id/btn_pos"},
+						    {"elementName":"没有预警提示", "locator":"<id>=com.upchina:id/no_data_txt"},
+						    {"elementName":"预警1", "locator":"<xpath>=(//android.widget.ListView//android.widget.LinearLayout)[1]"},
+						    {"elementName":"预警2", "locator":"<xpath>=(//android.widget.ListView//android.widget.LinearLayout)[9]"}
+						]
+					},
+					{
+						"areaName":"智能选股","locator":"",
+						"elements":[
+							{"elementName":"选股标题",      "locator":"<id>=com.upchina:id/choose_title"},
+							
+							{"elementName":"一键选股",      "locator":"<xpath>=(//android.widget.RelativeLayout/android.widget.ImageView)[1]","view":"主页:一键选股"},
+							{"elementName":"一键选股标记",  "locator":"<id>=com.upchina:id/onekey_choose_new_tip"},
+							
+							{"elementName":"涨停尖兵",      "locator":"<xpath>=(//android.widget.RelativeLayout/android.widget.ImageView)[3]","view":"主页:涨停尖兵"},
+							{"elementName":"涨停尖兵标记",  "locator":"<xpath>=(//android.widget.ImageView)[2]"},
+							
+							{"elementName":"短线狙击",      "locator":"<xpath>=(//android.widget.RelativeLayout/android.widget.ImageView)[5]","view":"主页:短线狙击"},
+							{"elementName":"短线狙击标记",  "locator":"<xpath>=(//android.widget.ImageView)[3]"},
+							
+							{"elementName":"研报选股",      "locator":"<name>=研报选股"},
+							{"elementName":"机构关注最高",  "locator":"<name>=机构关注最高"},
+							{"elementName":"明星分析师荐股","locator":"<name>=明星分析师荐股"},
+							{"elementName":"估值空间最大",  "locator":"<name>=估值空间最大"},
+							
+							{"elementName":"机构持仓",     "locator":"<name>=机构持仓"},
+							{"elementName":"基金重仓",     "locator":"<name>=基金重仓","view":"主页:机构持仓"},
+							{"elementName":"社保重仓",     "locator":"<name>=社保重仓","view":"主页:机构持仓"},
+							{"elementName":"QFII重仓",     "locator":"<name>=QFII重仓","view":"主页:机构持仓"},
+							
+							{"elementName":"返回",         "locator":"<id>=com.upchina:id/stock_backbtn","view":"主页:主页"}
+						]
+					},
+					{
+						"areaName":"一键选股","locator":"",
+						"elements":[
+							{"elementName":"一键选股标题",  "locator":"<id>=com.upchina:id/title"},
+							
+							{"elementName":"形态",          "locator":"<id>=com.upchina:id/onekey_choose_form"},
+							{"elementName":"MACD金叉",      "locator":"<name>=MACD金叉","view":"主页:指标内容页"},
+							{"elementName":"底部红三兵",    "locator":"<name>=底部红三兵"},
+							{"elementName":"深跌回弹",      "locator":"<name>=深跌回弹"},
+							
+							{"elementName":"特色",          "locator":"<id>=com.upchina:id/onekey_choose_feature"},
+							{"elementName":"操盘论势",      "locator":"<name>=操盘论势"},
+							{"elementName":"资金博弈",      "locator":"<name>=资金博弈"},
+							{"elementName":"MACD多周期共振","locator":"<name>=MACD多周期共振"},
+							 
+							{"elementName":"经典",          "locator":"<id>=com.upchina:id/onekey_choose_classics"},
+							{"elementName":"冰火两重天",    "locator":"<name>=冰火两重天"},
+							{"elementName":"买卖频谱",      "locator":"<name>=买卖频谱"},
+							{"elementName":"趋势顶底",      "locator":"<name>=趋势顶底"},
+							
+							{"elementName":"用户",          "locator":"<id>=com.upchina:id/onekey_choose_user"},
+							{"elementName":"资金谐波",      "locator":"<name>=资金谐波"},
+							{"elementName":"黄金柱",        "locator":"<name>=黄金柱"},
+							 
+							{"elementName":"名家",         "locator":"<id>=com.upchina:id/onekey_choose_master"},
+							{"elementName":"短线猎杀",     "locator":"<name>=短线猎杀"},
+							{"elementName":"顺势擒龙",     "locator":"<name>=顺势擒龙"},
+							{"elementName":"一线擒牛",     "locator":"<name>=一线擒牛"},
+							
+							{"elementName":"一键选股返回", "locator":"<id>=com.upchina:id/back_btn","view":"主页:选股"}
+						]
+					},
+					{
+						"areaName":"指标内容页","locator":"",
+						"elements":[
+							{"elementName":"指标内容标题",  "locator":"<id>=com.upchina:id/title_name"},
+							
+							{"elementName":"形态名称",      "locator":"<id>=com.upchina:id/index_name"},
+							{"elementName":"文案描述",      "locator":"<id>=com.upchina:id/index_label"},
+							{"elementName":"选股日期",      "locator":"<id>=com.upchina:id/date"},
+							
+							{"elementName":"名称代码",      "locator":"<id>=com.upchina:id/name_code"},
+							{"elementName":"现价",          "locator":"<id>=com.upchina:id/price_now"},
+							{"elementName":"涨幅",          "locator":"<id>=com.upchina:id/up_down"},
+							{"elementName":"股票",          "locator":"<id>=com.upchina:id/name","view":"主页:指数分析页"},
+							{"elementName":"股票现价",      "locator":"<id>=com.upchina:id/price"},
+							
+							{"elementName":"分享",          "locator":"<id>=com.upchina:id/share_layout"},
+							{"elementName":"取消",          "locator":"<xpath>=//android.widget.Button"},
+							{"elementName":"新浪微博",      "locator":"<xpath>=(//android.widget.ImageView)[1]"},
+							{"elementName":"微信好友",      "locator":"<xpath>=(//android.widget.ImageView)[2]"},
+							{"elementName":"微信朋友圈",    "locator":"<xpath>=(//android.widget.ImageView)[3]"},
+							{"elementName":"QQ好友",        "locator":"<xpath>=(//android.widget.ImageView)[4]"},
+							
+							{"elementName":"指标内容返回",  "locator":"<id>=com.upchina:id/backbtn","view":"主页:一键选股"}
+						]
+					},
+					{
+						"areaName":"研究所","locator":"",
+						"elements":[
+							{"elementName":"研究所标题",          "locator":"<name>=UP金融研究所"},
+							{"elementName":"研究所返回",          "locator":"<id>=com.upchina:id/stock_backbtn","view":"主页:主页"},
+							{"elementName":"最新",                "locator":"<name>=最新"},
+							{"elementName":"新闻详情1",           "locator":"<xpath>=(//android.widget.RelativeLayout/android.widget.RelativeLayout)[1]","view":"主页:资讯内容页"},
+							{"elementName":"搜索",                "locator":"<id>=com.upchina:id/stock_searchbtn"},
+							
+							{"elementName":"分类",          "locator":"<name>=分类"},
+							{"elementName":"策略",          "locator":"<name>=策略","view":"主页:新闻分类页"},
+							{"elementName":"个股",          "locator":"<name>=个股","view":"主页:新闻分类页"},
+							{"elementName":"主题",          "locator":"<name>=主题","view":"主页:新闻分类页"},
+							{"elementName":"大势",          "locator":"<name>=大势","view":"主页:新闻分类页"},
+							{"elementName":"宏观",          "locator":"<name>=宏观","view":"主页:新闻分类页"},
+							{"elementName":"政策",          "locator":"<name>=政策","view":"主页:新闻分类页"},
+							{"elementName":"图说",          "locator":"<name>=图说","view":"主页:新闻分类页"},
+							{"elementName":"热点",          "locator":"<name>=热点","view":"主页:新闻分类页"}
+						]
+					},	
+					{
+						"areaName":"资讯内容页","locator":"",
+						"elements":[
+							{"elementName":"收藏",        "locator":"<name>=收藏","view":"主页:登录"},
+							{"elementName":"操作提示",    "locator":"<id>=com.upchina:id/lead_dialog_layout"},
+						    {"elementName":"资讯返回",    "locator":"<id>=com.upchina:id/back_btn","view":"主页:研究所"},
+						    {"elementName":"已收藏",      "locator":"<name>=已收藏"},
+						    {"elementName":"分享",        "locator":"<name>=分享"}
+						]
+					},
+					{
+						"areaName":"新闻分类页","locator":"",
+						"elements":[
+							{"elementName":"新闻标题",        "locator":"<id>=com.upchina:id/rs_list_title"},
+						    {"elementName":"新闻返回",        "locator":"<id>=com.upchina:id/stock_backbtn","view":"主页:研究所"},
+						    {"elementName":"新闻内容1",       "locator":"<xpath>=(//android.widget.RelativeLayout/android.widget.TextView)[2]","view":"主页:资讯内容页"},
+						    {"elementName":"股票搜索",        "locator":"<id>=com.upchina:id/stock_searchbtn"}
+						]
+					},
+					{
+						"areaName":"编辑指数","locator":"",
+						"elements":[
+							{"elementName":"编辑指数返回",          "locator":"<id>=com.upchina:id/back_btn","view":"主页:行情"},
+							{"elementName":"编辑指数",              "locator":"<name>=编辑指数"},
+							{"elementName":"选中股票",              "locator":"<xpath>=//android.widget.ImageView"},
+							{"elementName":"指数内容",              "locator":"<xpath>=//android.widget.ListView//android.widget.TextView"}
+						]
+					},	
+					{
+						"areaName":"选股页面","locator":"",
+						"elements":[
+							{"elementName":"选股页面返回",      "locator":"<id>=com.upchina:id/stock_backbtn"},
+							
+							{"elementName":"选股标题",          "locator":"<id>=com.upchina:id/choose_title"},
+							{"elementName":"名称",              "locator":"<name>=名称"},
+							
+							{"elementName":"股票名称1",         "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[1]"},
+							{"elementName":"持有家数1",         "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[3]"},
+							{"elementName":"持股数量1",         "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[4]"},
+							{"elementName":"目标价格1",         "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[5]"}
+							
+						]
+					},	
+					{
+						"areaName":"高手藏金阁","locator":"",
+						"elements":[
+							{"elementName":"高手藏金阁返回",       "locator":"<id>=com.upchina:id/back_btn","view":"主页:发现"},
+							
+							{"elementName":"高手藏金阁标题",       "locator":"<id>=com.upchina:id/title"},
+							
+							{"elementName":"新闻内容1",            "locator":"<xpath>=(//android.widget.ListView/android.view.View)[1]","view":"主页:资讯内容页"}
+							
+						]
+					},	
+					{
+						"areaName":"特色内参","locator":"",
+						"elements":[
+							{"elementName":"特色内参返回",       "locator":"<id>=com.upchina:id/stock_backbtn","view":"主页:发现"},
+							
+							{"elementName":"特色内参标题",       "locator":"<xpath>=(//android.widget.TextView)[1]"},
+							{"elementName":"新闻内容1",          "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[2]","view":"主页:资讯内容页"},
+							{"elementName":"新闻内容2",          "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[6]","view":"主页:资讯内容页"}
+							
+						]
+					},	
+					{
+						"areaName":"指数分析页","locator":"",
+						"elements":[
+						    {"elementName":"操作提示",    "locator":"<id>=com.upchina:id/dialog_img"},
+						    {"elementName":"标题",        "locator":"<id>=com.upchina:id/stock_name"},
+						    {"elementName":"代码",        "locator":"<id>=com.upchina:id/stock_code"},
+						    {"elementName":"返回",        "locator":"<id>=com.upchina:id/stock_backbtn","view":["主页:行情","主页:自选","主页:搜索"]},
+						    {"elementName":"搜索",        "locator":"<id>=com.upchina:id/stock_searchbtn"},
+						    {"elementName":"加自选",      "locator":"<name>=加自选"},
+						    {"elementName":"删自选",      "locator":"<name>=删自选"},
+						    {"elementName":"现价",        "locator":"<id>=com.upchina:id/stock_now"},
+						    {"elementName":"涨幅",        "locator":"<id>=com.upchina:id/stock_range"},
+						    {"elementName":"涨幅价",      "locator":"<id>=com.upchina:id/stock_price"},
+						    {"elementName":"最高价",      "locator":"<xpath>=(//android.widget.TextView)[8]"},
+						    {"elementName":"最低价",      "locator":"<xpath>=(//android.widget.TextView)[10]"},
+						    {"elementName":"上涨家数",    "locator":"<xpath>=(//android.widget.TextView)[12]"},
+						    {"elementName":"成交额",      "locator":"<xpath>=(//android.widget.TextView)[14]"},
+						    {"elementName":"开盘价",      "locator":"<xpath>=(//android.widget.TextView)[16]"},
+						    {"elementName":"昨收",        "locator":"<xpath>=(//android.widget.TextView)[18]"},
+						    {"elementName":"下跌家数",    "locator":"<xpath>=(//android.widget.TextView)[20]"},
+						    {"elementName":"成交量",      "locator":"<xpath>=(//android.widget.TextView)[22]"},
+						    {"elementName":"分时",        "locator":"<name>=分时"},
+							{"elementName":"日K",         "locator":"<name>=日K"},
+							{"elementName":"周K",         "locator":"<name>=周K"},
+							{"elementName":"月K",         "locator":"<name>=月K"},
+							{"elementName":"分钟",        "locator":"<name>=分钟▼"},
+							
+							{"elementName":"1分钟",        "locator":"<name>=1分钟"},
+							{"elementName":"5分钟",        "locator":"<name>=5分钟"},
+							{"elementName":"15分钟",       "locator":"<name>=15分钟"},
+							{"elementName":"30分钟",       "locator":"<name>=30分钟"},
+							{"elementName":"60分钟",       "locator":"<name>=60分钟"},
+							
+							{"elementName":"资讯",        "locator":"<name>=资讯"},
+							{"elementName":"研报",        "locator":"<name>=研报"},
+							{"elementName":"资金",        "locator":"<name>=资金"},
+							{"elementName":"F10",         "locator":"<name>=F10"},
+							{"elementName":"分时分析图",  "locator":"<id>=com.upchina:id/linefragment_view"},
+							{"elementName":"分析图",      "locator":"<id>=com.upchina:id/kline_view"},
+							{"elementName":"资讯内容",    "locator":"<xpath>=(//android.widget.ListView//android.view.View)[2]","view":"主页:资讯内容页"},
+							
+						    {"elementName":"预警",        "locator":"<name>=预警"},
+						    {"elementName":"交易",        "locator":"<name>=交易","view":"主页:渤海交易登录"},
+						    {"elementName":"分享",        "locator":"<name>=分享"}
+						]
+					},	
+					{
+						"areaName":"登录","locator":"",
+						"elements":[
+							{"elementName":"帐号",   "locator":"<xpath>=(//android.widget.EditText)[1]"},
+							{"elementName":"密码",   "locator":"<xpath>=(//android.widget.EditText)[2]"},
+							{"elementName":"登录",   "locator":"<id>=com.upchina:id/login_btn","view":["主页:我的","主页:资讯内容页","主页:股林高手","主页:个人信息"]},
+							{"elementName":"注册",   "locator":"<id>=com.upchina:id/to_regist","view":"主页:快捷注册"},
+							{"elementName":"QQ",     "locator":"<id>=com.upchina:id/login_qq_btn","view":"主页:授权页面"},
+							{"elementName":"微信",   "locator":"<id>=com.upchina:id/login_wechat","view":"主页:微信登陆"},
+							{"elementName":"微博",   "locator":"<id>=com.upchina:id/login_sina","view":"主页:微博"}
+						]
+					},
+					{
+						"areaName":"个人信息","locator":"",
+						"elements":[
+							{"elementName":"个人标题",           "locator":"<xpath>=(//android.widget.TextView)[1]"},
+							{"elementName":"个人返回",           "locator":"<id>=com.upchina:id/back_btn","view":"主页:我的"},
+							
+							{"elementName":"头像",             "locator":"<id>=com.upchina:id/personal_info_head_iv"},
+							{"elementName":"昵称",             "locator":"<id>=com.upchina:id/info_nick_name"},
+							{"elementName":"第三方帐号绑定",   "locator":"<id>=com.upchina:id/info_bind_state","view":"主页:帐号绑定"},
+							{"elementName":"修改密码",         "locator":"<id>=com.upchina:id/personal_info_modify_pwd_layout","view":"主页:修改密码页"},
+							{"elementName":"退出登录",         "locator":"<name>=退出登录"},
+							{"elementName":"否",               "locator":"<id>=com.upchina:id/btn_neg"},
+							{"elementName":"是",               "locator":"<id>=com.upchina:id/btn_pos","view":"主页:我的"}
+						]
+					},
+					{
+						"areaName":"微信登陆","locator":"",
+						"elements":[
+							{"elementName":"返回",        "locator":"<id>=com.tencent.mm:id/ew"},
+							{"elementName":"标题",        "locator":"<id>=android:id/text1"},
+							
+							{"elementName":"确认登陆",    "locator":"<xpath>=//android.widget.Button","view":"主页:填写资料"}
+						]
+					},
+					{
+						"areaName":"微博","locator":"",
+						"elements":[
+							{"elementName":"返回",          "locator":"<xpath>=(//android.widget.LinearLayout/android.widget.ImageView)[1]"},
+							
+							{"elementName":"微博图标",      "locator":"<xpath>=//android.widget.Image"},
+							{"elementName":"微博帐号",      "locator":"<xpath>=(//android.widget.EditText)[1]"},
+							{"elementName":"微博密码",      "locator":"<xpath>=(//android.widget.EditText)[2]"},
+							{"elementName":"登录",          "locator":"<name>=登录"},
+							
+							{"elementName":"验证码",       "locator":"<id>=com.sina.weibo:id/iv_access_image"},
+							{"elementName":"输入框",       "locator":"<id>=com.sina.weibo:id/et_input"},
+							{"elementName":"确定",         "locator":"<name>=确定","view":["主页:填写资料","主页:分享"]}
+						]
+					},	
+					{
+						"areaName":"授权页面","locator":"",
+						"elements":[
+							{"elementName":"返回",        "locator":"<name>=返回"},
+							{"elementName":"标题",        "locator":"<id>=com.tencent.mobileqq:id/ivTitleName"},
+							{"elementName":"切换账号",    "locator":"<id>=com.tencent.mobileqq:id/ivTitleBtnRightText"},
+							{"elementName":"登录",        "locator":"<xpath>=//android.widget.Button","view":"主页:填写资料"},
+							{"elementName":"授权并登陆",  "locator":"<name>=授权并登陆","view":"主页:填写资料"}
+						]
+					},
+					{
+						"areaName":"帐号绑定","locator":"",
+						"elements":[
+							{"elementName":"返回",        "locator":"<id>=com.upchina:id/stock_backbtn","view":"主页:个人信息"},
+							{"elementName":"新浪微博",    "locator":"<name>=完成"},
+							{"elementName":"微博昵称",    "locator":"<xpath>=(//android.widget.TextView)[4]"},
+							{"elementName":"微信",        "locator":"<name>=微信"},
+							{"elementName":"微信昵称",    "locator":"<xpath>=(//android.widget.LinearLayout[2]//android.widget.TextView)[2]"},
+							{"elementName":"手机QQ",      "locator":"<name>=手机QQ"},
+							{"elementName":"QQ昵称",      "locator":"<xpath>=(//android.widget.LinearLayout[3]//android.widget.TextView)[2]"},
+							{"elementName":"否",          "locator":"<id>=com.upchina:id/btn_neg"},
+							{"elementName":"是",          "locator":"<id>=com.upchina:id/btn_pos"}
+						]
+					},
+					{
+						"areaName":"修改密码页","locator":"",
+						"elements":[
+							{"elementName":"旧密码",     "locator":"<id>=com.upchina:id/old_pwd"},
+							{"elementName":"新密码",     "locator":"<id>=com.upchina:id/new_pwd"},
+							{"elementName":"确认新密码", "locator":"<id>=com.upchina:id/comfirm_pwd"},
+							{"elementName":"保存修改",   "locator":"<id>=com.upchina:id/submit_btn","view":"主页:登录"},
+							{"elementName":"提示",       "locator":"<name>=密码长度为6~18个字符（0-9a-zA-Z）"}														
+						]
+					},
+					{
+						"areaName":"快捷注册","locator":"",
+						"elements":[
+							{"elementName":"返回",          "locator":"<id>=com.upchina:id/back_btn","view":"主页:登录"},
+							{"elementName":"标题",          "locator":"<xpath>=(//android.widget.TextView)[1]"},
+							{"elementName":"用户名",        "locator":"<id>=com.upchina:id/user_name"},
+							{"elementName":"密码",          "locator":"<id>=com.upchina:id/pwd"},
+							{"elementName":"确认密码",      "locator":"<id>=com.upchina:id/pwd_comfirm"},
+							{"elementName":"手机号码",      "locator":"<id>=com.upchina:id/phone"},
+							{"elementName":"提交",          "locator":"<id>=com.upchina:id/submit_btn"},
+							{"elementName":"确定",          "locator":"<name>=确定","view":"主页:个人信息"}
+						]
+					},
+					{
+						"areaName":"优品金融终端页面","locator":"",
+						"elements":[
+							{"elementName":"标题",        "locator":"<id>=miui:id/action_bar_title"},
+						    {"elementName":"打开",        "locator":"<name>=打开"}
+						]
+					},
+					{
+						"areaName":"意见反馈","locator":"",
+						"elements":[
+							{"elementName":"标题",        "locator":"<id>=com.upchina:id/title"},
+							{"elementName":"意见内容",    "locator":"<id>=com.upchina:id/edittext"},
+							{"elementName":"图片",        "locator":"<id>=com.upchina:id/cut_iv"},
+							{"elementName":"联系方式",    "locator":"<id>=com.upchina:id/contact_et"},
+							{"elementName":"提交",        "locator":"<id>=com.upchina:id/submit_btn"},
+							{"elementName":"是",          "locator":"<id>=com.upchina:id/btn_pos","view":"主页:我的"},
+							{"elementName":"否",          "locator":"<id>=com.upchina:id/btn_neg"},
+							{"elementName":"返回",        "locator":"<id>=com.upchina:id/stock_backbtn","view":"主页:我的"}
+						]
+					},	
+					{
+						"areaName":"填写资料","locator":"",
+						"elements":[
+							{"elementName":"完成",        "locator":"<name>=完成","view":"主页:我的"},
+							{"elementName":"返回",        "locator":"<id>=com.upchina:id/back_btn"},
+							{"elementName":"昵称",        "locator":"<id>=com.upchina:id/nick_name"},
+							{"elementName":"手机号",      "locator":"<id>=com.upchina:id/phone"}
+						]
+					},
+					{
+						"areaName":"L2风云详情页","locator":"",
+						"elements":[
+							{"elementName":"详情标题",          "locator":"<xpath>=(//android.widget.TextView)[1]"},
+							{"elementName":"操作提示",    "locator":"<id>=com.upchina:id/lead_dialog_layout"},
+							{"elementName":"主力攻击",          "locator":"<id>=com.upchina:id/attack_tv"},
+							{"elementName":"主力撤退",          "locator":"<id>=com.upchina:id/retreat_tv"},
+							
+							{"elementName":"股票名称1",         "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[1]","view":"主页:指数分析页"}
+						]
+					},	
+					{
+						"areaName":"L2风云分析页","locator":"",
+						"elements":[
+							{"elementName":"分析标题",         "locator":"<xpath>=(//android.widget.TextView)[1]"},
+							{"elementName":"分析返回",         "locator":"<id>=com.upchina:id/back_btn","view":"主页:L2风云"},
+							{"elementName":"搜索",             "locator":"<id>=com.upchina:id/stock_searchbtn"},
+							{"elementName":"股票名称1",        "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[1]","view":"主页:指数分析页"}
+						]
+					},
+					{
+						"areaName":"L2风云","locator":"",
+						"elements":[
+							{"elementName":"L2风云返回",        "locator":"<id>=com.upchina:id/back_btn","view":"主页:发现"},
+							
+							{"elementName":"L2风云标题",        "locator":"<id>=com.upchina:id/l2_title"},
+							{"elementName":"实战教学",          "locator":"<name>=实战教学"},
+							
+							{"elementName":"慧眼识庄",          "locator":"<name>=慧眼识庄","view":"主页:L2风云详情页"},
+							{"elementName":"资金先锋",          "locator":"<name>=资金先锋","view":"主页:L2风云详情页"},
+							{"elementName":"闪电突击",          "locator":"<name>=闪电突击","view":"主页:L2风云详情页"},
+							{"elementName":"拖拉机单",          "locator":"<name>=拖拉机单","view":"主页:L2风云分析页"},
+							{"elementName":"顶级挂单",          "locator":"<name>=顶级挂单","view":"主页:L2风云分析页"},
+							{"elementName":"主力撤单",          "locator":"<name>=主力撤单","view":"主页:L2风云分析页"}
+						]
+					},	
+					{
+						"areaName":"预警设置","locator":"",
+						"elements":[
+						    {"elementName":"预警现价",    "locator":"<id>=com.upchina:id/now_price"},						    
+						    {"elementName":"股价高于",    "locator":"<id>=com.upchina:id/price_up"},
+						    {"elementName":"股价低于",    "locator":"<id>=com.upchina:id/price_down"},
+						    {"elementName":"开启高价",    "locator":"<id>=com.upchina:id/switch_btn_1"},
+						    {"elementName":"开启低价",    "locator":"<id>=com.upchina:id/switch_btn_2"},
+						    {"elementName":"涨幅输入",    "locator":"<id>=com.upchina:id/profit_up"},
+						    {"elementName":"跌幅输入",    "locator":"<id>=com.upchina:id/profit_down"},
+						    
+						    {"elementName":"当前价",      "locator":"<id>=com.upchina:id/now_price"},
+						    {"elementName":"低于当前价",  "locator":"<id>=com.upchina:id/price_up_prompt"},
+						    {"elementName":"高于当前价",  "locator":"<id>=com.upchina:id/price_down_prompt"},
+						    
+						    {"elementName":"涨跌",        "locator":"<id>=com.upchina:id/up_down"},
+						    
+						    {"elementName":"涨跌幅",      "locator":"<id>=com.upchina:id/up_down"},
+						    {"elementName":"涨幅过高",    "locator":"<id>=com.upchina:id/profit_up_prompt"},
+						    {"elementName":"跌幅过高",    "locator":"<id>=com.upchina:id/profit_down_prompt"},
+						    
+						    
+						    {"elementName":"提交",        "locator":"<id>=com.upchina:id/submit_btn","view":"主页:指数分析页"},
+						    {"elementName":"返回前一页",  "locator":"<id>=com.upchina:id/back_btn"}
+						]
+					},	
+					{
+						"areaName":"图片","locator":"",
+						"elements":[
+							{"elementName":"标题","locator":"<name>=请选择项目"},
+							{"elementName":"照片","locator":"<name>=照片"},
+							{"elementName":"本地","locator":"<name>=本地"}
+						]
+					},
+					{
+						"areaName":"搜索","locator":"",
+						"elements":[
+							{"elementName":"搜索1",    "locator":"<xpath>=(//android.widget.TextView)[1]"},
+							{"elementName":"股票代码1","locator":"<xpath>=(//android.widget.TextView)[2]"},
+							{"elementName":"搜索2",    "locator":"<xpath>=(//android.widget.TextView)[4]"},
+							{"elementName":"搜索3",    "locator":"<xpath>=(//android.widget.TextView)[7]"},
+							{"elementName":"搜索框",   "locator":"<id>=com.upchina:id/search_input"},
+							{"elementName":"隐藏",     "locator":"<id>=com.upchina:id/num_key_hide"},
+							{"elementName":"0",        "locator":"<name>=0"},
+							{"elementName":"1",        "locator":"<name>=1"},
+							{"elementName":"2",        "locator":"<name>=2"},
+							{"elementName":"3",        "locator":"<name>=3"},
+							{"elementName":"4",        "locator":"<name>=4"},
+							{"elementName":"5",        "locator":"<name>=5"},
+							{"elementName":"6",        "locator":"<name>=6"},
+							{"elementName":"7",        "locator":"<name>=7"},
+							{"elementName":"8",        "locator":"<name>=8"},
+							{"elementName":"9",        "locator":"<name>=9"},
+							{"elementName":"清空",     "locator":"<name>=清空"},
+							{"elementName":"600",      "locator":"<name>=600"},
+							{"elementName":"00",       "locator":"<name>=00"},
+							{"elementName":"002",      "locator":"<name>=002"},
+							{"elementName":"300",      "locator":"<name>=300"},
+							{"elementName":"名称",     "locator":"<xpath>=(//android.widget.LinearLayout//android.widget.TextView)[1]","view":"主页:指数分析页"},
+							{"elementName":"加自选",   "locator":"<xpath>=(//*[@text='加自选'])"},
+							{"elementName":"已添加",   "locator":"<xpath>=(//*[@text='已添加'])"},
+							{"elementName":"返回",     "locator":"<id>=com.upchina:id/stock_backbtn"}
+						]
+					}
+				]
+			}
+		]
+	}
+}

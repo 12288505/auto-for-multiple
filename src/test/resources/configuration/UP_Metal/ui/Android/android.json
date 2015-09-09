@@ -1,0 +1,344 @@
+{
+	"configFileType":"uiMap",
+	"application":{
+		"properties":{
+			"targetApplicationName":"UP Metal",
+			
+			"targetApplicationVersion":"up_android_0720_V1.0",
+			
+			"defaultPage":"使用导航"
+		},
+		"pages":[
+			{
+				"properties":{"pageName":"使用导航","path":"/","defaultView":"导航"},
+				"views":[
+					{"viewName":"导航","defaultArea":"导航","activeAreas":["导航"]}
+				],
+				"areas":[
+					{
+						"areaName":"导航","locator":"",
+						"elements":[
+							{"elementName":"立刻体验","locator":"<id>=com.upchina.metal:id/index_img","view":"主页:行情"},
+							{"elementName":"首页",  "locator":"<name>=首页"}
+						]
+					}
+				]
+			},
+			{
+				"properties":{"pageName":"主页","path":"/","defaultView":"主页"},
+				"views":[
+					{"viewName":"行情",          "defaultArea":"行情","activeAreas":["行情","页脚","消息中心","新闻"]},
+					{"viewName":"研究所",        "defaultArea":"研究所","activeAreas":["研究所","页脚","消息中心","新闻"]},
+					{"viewName":"百宝箱",        "defaultArea":"百宝箱","activeAreas":["百宝箱","页脚"]},
+					{"viewName":"我的",          "defaultArea":"我的","activeAreas":["我的","页脚","消息中心"]},
+					{"viewName":"登录",          "defaultArea":"登录","activeAreas":["登录"]},
+					{"viewName":"个人信息",      "defaultArea":"个人信息","activeAreas":["个人信息"]},
+					{"viewName":"快捷注册",      "defaultArea":"快捷注册","activeAreas":["快捷注册"]},
+					{"viewName":"修改密码",      "defaultArea":"修改密码","activeAreas":["修改密码"]},
+					{"viewName":"金牡丹银管家",  "defaultArea":"金牡丹银管家","activeAreas":["金牡丹银管家"]},
+					{"viewName":"百川银管家",    "defaultArea":"百川银管家","activeAreas":["百川银管家"]},
+					{"viewName":"金蝴蝶银管家",  "defaultArea":"金蝴蝶银管家","activeAreas":["金蝴蝶银管家"]},
+					{"viewName":"分析师排行",    "defaultArea":"分析师排行","activeAreas":["分析师排行"]},
+					{"viewName":"直播间",        "defaultArea":"直播间","activeAreas":["直播间"]},
+					{"viewName":"我的自选",      "defaultArea":"我的自选","activeAreas":["我的自选"]},
+					{"viewName":"市场行情页",    "defaultArea":"市场行情页","activeAreas":["市场行情页"]},
+					{"viewName":"财经日历",      "defaultArea":"财经日历","activeAreas":["财经日历"]},
+					{"viewName":"数据解读",      "defaultArea":"数据解读","activeAreas":["数据解读"]},
+					{"viewName":"我的收藏",      "defaultArea":"我的收藏","activeAreas":["我的收藏"]},
+					{"viewName":"预警管理",      "defaultArea":"预警管理","activeAreas":["预警管理"]},
+					{"viewName":"意见反馈",      "defaultArea":"意见反馈","activeAreas":["意见反馈"]},
+					{"viewName":"我的设置",      "defaultArea":"我的设置","activeAreas":["我的设置"]}
+				],
+				"areas":[
+					{
+						"areaName":"页脚","locator":"",
+						"elements":[
+							{"elementName":"跳转行情",     "locator":"<xpath>=(//android.widget.TabHost//android.widget.TabWidget//android.widget.ImageView)[1]","view":"主页:行情"},
+							{"elementName":"跳转研究所",   "locator":"<xpath>=(//android.widget.TabHost//android.widget.TabWidget//android.widget.ImageView)[2]","view":"主页:研究所"},
+							{"elementName":"跳转百宝箱",   "locator":"<xpath>=(//android.widget.TabHost//android.widget.TabWidget//android.widget.ImageView)[3]","view":"主页:百宝箱"},
+							{"elementName":"跳转我的",     "locator":"<xpath>=(//android.widget.TabHost//android.widget.TabWidget//android.widget.ImageView)[4]","view":"主页:我的"}
+						]
+					},
+					{
+					    "areaName":"行情","locator":"",
+						"elements":[
+						    {"elementName":"策略速递",  "locator":"<id>=com.upchina.metal:id/group_title","view":"主页:研究所"},
+							{"elementName":"标题",      "locator":"<id>=com.upchina.metal:id/stock_name"},
+							{"elementName":"消息中心",  "locator":"<id>=com.upchina.metal:id/msg_btn"},
+							{"elementName":"自选",      "locator":"<xpath>=(//*[@text='自选'])"},
+							{"elementName":"上海黄金",  "locator":"<name>=上海黄金"},
+							{"elementName":"广贵",      "locator":"<name>=广贵"},
+							{"elementName":"天贵",      "locator":"<name>=天贵"},
+							{"elementName":"国际黄金",  "locator":"<name>=国际黄金"},
+							{"elementName":"大圆",      "locator":"<name>=大圆"},
+							
+							{"elementName":"品种名称",      "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[5]","view":"主页:市场行情页"},
+							{"elementName":"涨跌幅",        "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[9]"},
+							{"elementName":"自选品种名",    "locator":"<xpath>=(//android.widget.FrameLayout//android.widget.TabHost//android.widget.LinearLayout)[4]","view":"主页:市场行情页"},
+							{"elementName":"自加选",        "locator":"<xpath>=//android.widget.GridView/android.widget.LinearLayout","view":"主页:我的自选"},
+							{"elementName":"自加选1",       "locator":"<xpath>=(//android.widget.FrameLayout//android.widget.TabHost//android.widget.LinearLayout)[15]","view":"主页:我的自选"},
+							
+							{"elementName":"市场",          "locator":"<xpath>=//android.widget.RelativeLayout/android.widget.TextView"},
+							
+							{"elementName":"自选消息1",      "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[1]"},
+							{"elementName":"自选消息2",      "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[3]"}
+						]
+					},
+					{
+					    "areaName":"我的自选","locator":"",
+						"elements":[
+							{"elementName":"自选标题",            "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"天贵",            "locator":"<name>=天贵"},
+							{"elementName":"广贵",            "locator":"<name>=广贵"},
+							{"elementName":"大圆",            "locator":"<name>=大圆"},
+							{"elementName":"上海黄金",        "locator":"<name>=上海黄金"},
+							{"elementName":"国际黄金",        "locator":"<name>=国际黄金"},
+							{"elementName":"添加品种",        "locator":"<xpath>=(//android.widget.GridView//android.widget.TextView)[4]"},
+							
+							{"elementName":"自选返回",            "locator":"<id>=com.upchina.metal:id/back","view":"主页:行情"}
+						]
+					},
+					{
+					    "areaName":"市场行情页","locator":"",
+						"elements":[
+							{"elementName":"名称",          "locator":"<id>=com.upchina.metal:id/stock_name"},
+							{"elementName":"编号",          "locator":"<name>=com.upchina.metal:id/stock_code"},
+							{"elementName":"价格",          "locator":"<name>=com.upchina.metal:id/stock_now"},
+							
+							{"elementName":"操作提示",      "locator":"<id>=com.upchina.metal:id/dialog_img"},
+							{"elementName":"返回",          "locator":"<id>=com.upchina.metal:id/stock_backbtn","view":["主页:行情","主页:财经日历"]}
+						]
+					},
+					{
+					    "areaName":"研究所","locator":"",
+						"elements":[
+							{"elementName":"全部",      "locator":"<name>=全部"},
+							{"elementName":"标题",      "locator":"<id>=com.upchina.metal:id/stock_name"},
+							{"elementName":"策略速递",  "locator":"<name>=策略速递"},
+							{"elementName":"每日必读",  "locator":"<name>=每日必读"},
+							{"elementName":"焦点透视",  "locator":"<name>=焦点透视"},
+							{"elementName":"技术学堂",  "locator":"<name>=技术学堂"},
+							
+							{"elementName":"消息中心",  "locator":"<id>=com.upchina.metal:id/msg_btn"},
+							{"elementName":"新闻1",     "locator":"<xpath>=(//android.view.View)[5]"}
+						]
+					},
+					{
+					    "areaName":"新闻","locator":"",
+						"elements":[
+							{"elementName":"操作提示",  "locator":"<id>=com.upchina.metal:id/dialog_img"},
+							{"elementName":"新闻返回",  "locator":"<id>=com.upchina.metal:id/back_btn"},
+							{"elementName":"收藏",      "locator":"<id>=com.upchina.metal:id/favorite_txt"}
+						]
+					},
+					{
+					    "areaName":"百宝箱","locator":"",
+						"elements":[
+							{"elementName":"标题",      "locator":"<id>=com.upchina.metal:id/stock_name"},
+							{"elementName":"银管家",    "locator":"<xpath>=(//android.widget.ImageView[2])[1]","view":["主页:登录","主页:金牡丹银管家"]},
+							{"elementName":"财经日历",  "locator":"<xpath>=(//android.widget.ImageView[2])[2]","view":"主页:财经日历"}
+						]
+					},
+					{
+					    "areaName":"我的","locator":"",
+						"elements":[
+							{"elementName":"点击登录",      "locator":"<id>=com.upchina.metal:id/username","view":["主页:登录","主页:个人信息"]},
+							{"elementName":"标题",          "locator":"<id>=com.upchina.metal:id/stock_name"},
+							{"elementName":"消息中心",      "locator":"<name>=消息中心"},
+							{"elementName":"我的收藏",      "locator":"<name>=我的收藏","view":"主页:我的收藏"},
+							{"elementName":"预警管理",      "locator":"<name>=预警管理","view":"主页:预警管理"},
+							{"elementName":"意见反馈",      "locator":"<name>=意见反馈","view":"主页:意见反馈"},
+							{"elementName":"设置",          "locator":"<name>=设置","view":"主页:我的设置"},
+							
+							{"elementName":"操作提示",  "locator":"<id>=com.upchina.metal:id/dialog_img"}
+						]
+					},
+					{
+					    "areaName":"金牡丹银管家","locator":"",
+						"elements":[
+							{"elementName":"金牡丹标题",     "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"分析师",         "locator":"<id>=com.upchina.metal:id/right_text","view":"主页:分析师排行"},
+							{"elementName":"全部动态",       "locator":"<id>=com.upchina.metal:id/tv_all"},
+							{"elementName":"我的关注",       "locator":"<id>=com.upchina.metal:id/tv_my_att"},
+							{"elementName":"分析师1",        "locator":"<xpath>=(//android.widget.ImageView)[1]","view":"主页:直播间"},
+							{"elementName":"用户名称",       "locator":"<xpath>=(//android.widget.TextView)[2]"},
+							{"elementName":"名家直播",       "locator":"<id>=com.upchina.metal:id/tv_tab1"},
+							{"elementName":"操盘室",         "locator":"<id>=com.upchina.metal:id/tv_tab2"},
+							{"elementName":"点击添加",       "locator":"<name>=点击添加"},
+							
+							{"elementName":"金牡丹返回",     "locator":"<id>=com.upchina.metal:id/back","view":"主页:百宝箱"}
+						]
+					},
+					{
+					    "areaName":"百川银管家","locator":"",
+						"elements":[
+							{"elementName":"百川标题",         "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"分析师1",          "locator":"<xpath>=(//android.widget.ImageView)[1]","view":"主页:直播间"},
+							{"elementName":"tab页",            "locator":"<id>=com.upchina.metal:id/tv_tab1"},
+							
+							{"elementName":"百川返回",         "locator":"<id>=com.upchina.metal:id/back","view":"主页:百宝箱"}
+						]
+					},
+					{
+					    "areaName":"金蝴蝶银管家","locator":"",
+						"elements":[
+							{"elementName":"金蝴蝶标题",   "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"分析师1",      "locator":"<xpath>=(//android.widget.ImageView)[1]","view":"主页:直播间"},
+							{"elementName":"白金区",       "locator":"<id>=com.upchina.metal:id/tv_tab1"},
+							{"elementName":"钻石区",       "locator":"<id>=com.upchina.metal:id/tv_tab2"},
+							{"elementName":"至尊区",       "locator":"<id>=com.upchina.metal:id/tv_tab3"},
+							
+							{"elementName":"金蝴蝶返回",   "locator":"<id>=com.upchina.metal:id/back","view":"主页:百宝箱"}
+						]
+					},
+					{
+					    "areaName":"分析师排行","locator":"",
+						"elements":[
+							{"elementName":"标题",         "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"关注",         "locator":"<xpath>=(//*[@text='+关注'])"},
+							{"elementName":"取消关注",     "locator":"<xpath>=(//*[@text='取消关注'])"},
+							{"elementName":"名称1",        "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[2]","view":"主页:直播间"},
+							{"elementName":"粉丝数1",      "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[3]"},
+							{"elementName":"名称2",        "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[5]","view":"主页:直播间"},
+							{"elementName":"粉丝数2",      "locator":"<xpath>=(//android.widget.ListView//android.widget.TextView)[6]"},
+							{"elementName":"返回",         "locator":"<id>=com.upchina.metal:id/back","view":"主页:金牡丹银管家"}
+						]
+					},
+					{
+					    "areaName":"直播间","locator":"",
+						"elements":[
+							{"elementName":"标题",         "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"头像",         "locator":"<xpath>=(//android.widget.ImageView)[1]"},
+							{"elementName":"昵称",         "locator":"<id>=com.upchina.metal:id/tv_name"},
+							{"elementName":"名词",         "locator":"<xpath>=(//android.view.View)[1]"},
+							{"elementName":"关注",         "locator":"<name>=关注"},
+							{"elementName":"取消关注",     "locator":"<name>=取消关注"},
+							
+							{"elementName":"直播动态",     "locator":"<id>=com.upchina.metal:id/tv_live"},
+							{"elementName":"分析师简介",   "locator":"<id>=com.upchina.metal:id/tv_intro"},
+							{"elementName":"时间1",        "locator":"<id>=(//android.widget.RelativeLayout/android.widget.TextView)[2]"},
+							{"elementName":"时间2",        "locator":"<id>=(//android.widget.RelativeLayout/android.widget.TextView)[3]"},
+							{"elementName":"返回",         "locator":"<id>=com.upchina.metal:id/back","view":"主页:分析师排行"}
+						]
+					},
+					{
+					    "areaName":"登录","locator":"",
+						"elements":[
+							{"elementName":"帐号",      "locator":"<id>=com.upchina.metal:id/user_name"},
+							{"elementName":"密码",      "locator":"<id>=com.upchina.metal:id/pwd"},
+							{"elementName":"登录",      "locator":"<id>=com.upchina.metal:id/login_btn","view":["主页:我的","主页:个人信息","主页:金牡丹银管家"]},
+							{"elementName":"注册",      "locator":"<id>=com.upchina.metal:id/to_regist","view":"主页:快捷注册"},
+							{"elementName":"返回",      "locator":"<id>=com.upchina.metal:id/back_btn","view":["主页:我的","主页:百宝箱"]},
+							{"elementName":"标题",      "locator":"<xpath>=(//android.widget.TextView)[1]"}
+						]
+					},
+					{
+						"areaName":"填写资料","locator":"",
+						"elements":[
+							{"elementName":"完成",        "locator":"<name>=完成","view":"主页:我的"},
+							{"elementName":"返回",        "locator":"<id>=com.upchina.metal:id/back_btn"},
+							{"elementName":"昵称",        "locator":"<id>=com.upchina.metal:id/nick_name"},
+							{"elementName":"手机号",      "locator":"<id>=com.upchina.metal:id/phone"}
+						]
+					},
+					{
+					    "areaName":"个人信息","locator":"",
+						"elements":[
+							{"elementName":"个人信息",       "locator":"<name>=个人信息"},
+							{"elementName":"头像",           "locator":"<id>=com.upchina.metal:id/personal_info_head_iv"},
+							{"elementName":"昵称",           "locator":"<id>=com.upchina.metal:id/info_nick_name"},
+							{"elementName":"绑定手机号",     "locator":"<id>=com.upchina.metal:id/info_bind_mobile_state"},
+							{"elementName":"修改密码",       "locator":"<id>=com.upchina.metal:id/personal_info_modify_pwd_layout","view":"主页:修改密码"},
+							{"elementName":"退出登录",       "locator":"<id>=com.upchina.metal:id/personal_info_exit_layout"},
+							
+							{"elementName":"是",             "locator":"<name>=是","view":"主页:我的"},
+							{"elementName":"否",             "locator":"<name>=否"},
+							
+							{"elementName":"返回",           "locator":"<id>=com.upchina.metal:id/back_btn","view":"主页:我的"}
+						]
+					},
+					{
+						"areaName":"快捷注册","locator":"",
+						"elements":[
+							{"elementName":"返回",          "locator":"<id>=com.upchina.metal:id/back_btn","view":"主页:登录"},
+							{"elementName":"标题",          "locator":"<xpath>=(//android.widget.TextView)[1]"},
+							{"elementName":"用户名",        "locator":"<id>=com.upchina.metal:id/user_name"},
+							{"elementName":"密码",          "locator":"<id>=com.upchina.metal:id/pwd"},
+							{"elementName":"确认密码",      "locator":"<id>=com.upchina.metal:id/pwd_comfirm"},
+							{"elementName":"手机号码",      "locator":"<id>=com.upchina.metal:id/phone"},
+							{"elementName":"提交",          "locator":"<id>=com.upchina.metal:id/submit_btn"},
+							{"elementName":"确定",          "locator":"<name>=确定","view":"主页:我的"}
+						]
+					},
+					{
+						"areaName":"修改密码","locator":"",
+						"elements":[
+							{"elementName":"旧密码",         "locator":"<id>=com.upchina.metal:id/old_pwd"},
+							{"elementName":"新密码",         "locator":"<id>=com.upchina.metal:id/new_pwd"},
+							{"elementName":"确认新密码",     "locator":"<id>=com.upchina.metal:id/comfirm_pwd"},
+							{"elementName":"保存修改",       "locator":"<id>=com.upchina.metal:id/submit_btn","view":"主页:登录"}
+						]
+					},
+					{
+						"areaName":"消息中心","locator":"",
+						"elements":[
+							{"elementName":"消息提示中心",         "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"消息返回",             "locator":"<id>=com.upchina.metal:id/stock_backbtn"}
+						]
+					},
+					{
+						"areaName":"财经日历","locator":"",
+						"elements":[
+							{"elementName":"财经日历标题",   "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"减日期",         "locator":"<id>=com.upchina.metal:id/left_btn"},
+							{"elementName":"加日期",         "locator":"<id>=com.upchina.metal:id/right_btn"},
+							{"elementName":"日历",           "locator":"<id>=com.upchina.metal:id/date_pick"},
+							{"elementName":"数据名称",       "locator":"<xpath>=(//android.widget.Image)[1]","view":"主页:数据解读"},
+							{"elementName":"取消",           "locator":"<name>=取消"},
+							{"elementName":"完成",           "locator":"<name>=完成"},
+							{"elementName":"返回",           "locator":"<id>=com.upchina.metal:id/back_btn","view":"主页:百宝箱"}
+						]
+					},
+					{
+						"areaName":"数据解读","locator":"",
+						"elements":[
+							{"elementName":"数据标题",             "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"数据返回",             "locator":"<id>=com.upchina.metal:id/back_btn","view":"主页:财经日历"}
+						]
+					},
+					{
+						"areaName":"我的收藏","locator":"",
+						"elements":[
+							{"elementName":"收藏标题",             "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"收藏编辑",             "locator":"<id>=com.upchina.metal:id/edit_btn"},
+							{"elementName":"收藏返回",             "locator":"<id>=com.upchina.metal:id/back_btn","view":"主页:我的"}
+						]
+					},
+					{
+						"areaName":"预警管理","locator":"",
+						"elements":[
+							{"elementName":"预警标题",             "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"预警编辑",             "locator":"<id>=com.upchina.metal:id/edit_btn"},
+							{"elementName":"预警返回",             "locator":"<id>=com.upchina.metal:id/back_btn","view":"主页:我的"}
+						]
+					},
+					{
+						"areaName":"意见反馈","locator":"",
+						"elements":[
+							{"elementName":"意见标题",             "locator":"<id>=com.upchina.metal:id/title"},
+							{"elementName":"意见提交",             "locator":"<name>=提交"},
+							{"elementName":"意见返回",             "locator":"<id>=com.upchina.metal:id/stock_backbtn","view":"主页:我的"}
+						]
+					},
+					{
+						"areaName":"我的设置","locator":"",
+						"elements":[
+							{"elementName":"设置名称",             "locator":"<name>=设置"},
+							{"elementName":"设置返回",             "locator":"<id>=com.upchina.metal:id/stock_backbtn","view":"主页:我的"}
+						]
+					}
+				]
+			}
+		]
+	}
+}

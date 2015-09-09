@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UP China Android App autotest">
+  <test name="TestUPchinaAndroid">
+	<packages>
+      <package name="testcase.UP_China.Android.Monkey"/>
+    </packages>
+  </test>
+</suite>

@@ -1,0 +1,55 @@
+{
+	"configFileType":"uiMap",
+	"application":{
+		"properties":{
+			"targetApplicationName":"UP China",
+			"targetApplicationVersion":"up web test",
+			"defaultPage":"优品财富"
+		},
+		"pages":[
+			{
+				"properties":{"pageName":"优品财富","path":"/","defaultView":"首页"},
+				"views":[
+					{"viewName":"首页","defaultArea":"首页","activeAreas":["首页","导航"]},
+					{"viewName":"关于我们","defaultArea":"关于我们","activeAreas":["关于我们","导航"]},
+					{"viewName":"投资卫士","defaultArea":"投资卫士","activeAreas":["投资卫士","导航"]},
+					{"viewName":"研究所","defaultArea":"研究所","activeAreas":["研究所","导航"]},
+					{"viewName":"商务合作","defaultArea":"商务合作","activeAreas":["商务合作","导航"]}
+				],
+				"areas":[
+					{
+						"areaName":"首页","locator":"",
+						"elements":[
+							{"elementName":"公司介绍more","locator":"<css>=.m-intro  a"},
+							{"elementName":"研究所more",  "locator":"<css>=.m-partner a"},
+							{"elementName":"公司资质more",  "locator":"<css>=.m-company a"},
+							{"elementName":"商务合作more",  "locator":"<css>=.m-business a"}
+						]
+					},
+					{
+						"areaName":"导航","locator":"",
+						"elements":[
+							{"elementName":"首页","locator":"<css>=li[t='1'] a","view":"优品财富:首页"},
+							{"elementName":"关于我们",  "locator":"<css>=li[t='2'] a","view":"优品财富:关于我们"},
+							{"elementName":"投资卫士",  "locator":"<css>=li[t='3'] a"},
+							{"elementName":"电脑版",  "locator":"<css>=#con-3>a:nth-of-type(1)","view":"优品财富:投资卫士"},
+							{"elementName":"研究所",  "locator":"<css>=li[t='4'] a","view":"优品财富:研究所"},
+							{"elementName":"商务合作",  "locator":"<css>=li[t='6'] a","view":"优品财富:商务合作"}
+						]
+					},
+					{
+						"areaName":"关于我们","locator":"",
+						"elements":[
+							{"elementName":"公司介绍","locator":"<id>=aboutus"},
+							{"elementName":"企业文化",  "locator":"<id>=qywh"},
+							{"elementName":"资质荣誉",  "locator":"<id>=zzry"},
+							{"elementName":"战略合作",  "locator":"<id>=zlhz"},
+							{"elementName":"加入我们",  "locator":"<id>=jrwm"},
+							{"elementName":"联系我们",  "locator":"<id>=lxwm"}
+						]
+					}
+				]
+			}
+		]
+	}
+}
